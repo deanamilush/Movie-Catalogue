@@ -1,4 +1,4 @@
-package com.dean.moviecatalogue
+package com.dean.moviecatalogue.movies
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

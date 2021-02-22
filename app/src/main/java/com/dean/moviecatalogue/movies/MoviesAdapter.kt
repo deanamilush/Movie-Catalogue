@@ -1,10 +1,11 @@
-package com.dean.moviecatalogue
+package com.dean.moviecatalogue.movies
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.dean.moviecatalogue.R
 import com.dean.moviecatalogue.databinding.ItemsMoviesBinding
 
 class MoviesAdapter: RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
@@ -19,12 +20,12 @@ class MoviesAdapter: RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): MoviesAdapter.MoviesViewHolder {
+    ): MoviesViewHolder {
         val itemsAcademyBinding = ItemsMoviesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MoviesViewHolder(itemsAcademyBinding)
     }
 
-    override fun onBindViewHolder(holder: MoviesAdapter.MoviesViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
         val course = listMovies[position]
         holder.bind(course)
     }
