@@ -21,13 +21,13 @@ class MoviesAdapter: RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
         parent: ViewGroup,
         viewType: Int
     ): MoviesViewHolder {
-        val itemsAcademyBinding = ItemsMoviesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MoviesViewHolder(itemsAcademyBinding)
+        val itemsMoviesBinding = ItemsMoviesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return MoviesViewHolder(itemsMoviesBinding)
     }
 
     override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
-        val course = listMovies[position]
-        holder.bind(course)
+        val mov = listMovies[position]
+        holder.bind(mov)
     }
 
     override fun getItemCount(): Int = listMovies.size

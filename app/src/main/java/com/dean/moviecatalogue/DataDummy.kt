@@ -1,6 +1,7 @@
 package com.dean.moviecatalogue
 
 import com.dean.moviecatalogue.movies.MoviesData
+import com.dean.moviecatalogue.tv.TvShowsData
 
 object DataDummy {
 
@@ -90,5 +91,103 @@ object DataDummy {
         )
 
         return movies
+    }
+
+    fun generateDummyTvShows(): List<TvShowsData> {
+
+        val tvShows = ArrayList<TvShowsData>()
+
+        tvShows.add(
+            TvShowsData(
+                "Marvel's Iron Fist (2017)",
+                "Action & Adventure, Drama, Sci-Fi & Fantasy",
+                R.drawable.poster_iron_fist,
+                "Danny Rand resurfaces 15 years after being presumed dead. Now, with the power of the Iron Fist, he seeks to reclaim his past and fulfill his destiny.",
+                "Scott Buck"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "Naruto Shippūden (2007)",
+                "Animation, Action & Adventure, Sci-Fi & Fantasy",
+                R.drawable.poster_naruto_shipudden,
+                "Naruto Shippuuden is the continuation of the original animated TV series Naruto.The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru. After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work, though it will not be easy, as He has amassed a few (more dangerous) enemies, in the likes of the shinobi organization; Akatsuki.",
+                "null"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "NCIS (2003)",
+                "Crime, Action & Adventure, Drama",
+                R.drawable.poster_ncis,
+                "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has a shred of evidence connected to Navy and Marine Corps personnel, regardless of rank or position.",
+                "Donald P. Bellisario"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "Riverdale (2017)",
+                "Mystery, Drama, Crime",
+                R.drawable.poster_riverdale,
+                "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
+                "Roberto Aguirre-Sacasa"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "Shameless (2011)",
+                "Drama, Comedy",
+                R.drawable.poster_shameless,
+                "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him. They may not be like any family you know, but they make no apologies for being exactly who they are.",
+                "Paul Abbott"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "Supergirl (2015)",
+                "Drama, Sci-Fi & Fantasy, Action & Adventure",
+                R.drawable.poster_supergirl,
+                "Twenty-four-year-old Kara Zor-El, who was taken in by the Danvers family when she was 13 after being sent away from Krypton, must learn to embrace her powers after previously hiding them. The Danvers teach her to be careful with her powers, until she has to reveal them during an unexpected disaster, setting her on her journey of heroism.",
+                "Greg Berlanti, Ali Adler, Andrew Kreisberg"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "Supernatural (2005)",
+                "Drama, Mystery, Sci-Fi & Fantasy",
+                R.drawable.poster_supernatural,
+                "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way.",
+                "Eric Kripke"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "The Simpsons (1989)",
+                "Family, Animation, Comedy\n",
+                R.drawable.poster_the_simpson,
+                "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
+                "Matt Groening"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "The Umbrella Academy (2019)",
+                "Action & Adventure, Sci-Fi & Fantasy, Drama\n",
+                R.drawable.poster_the_umbrella,
+                "A dysfunctional family of superheroes comes together to solve the mystery of their father's death, the threat of the apocalypse and more.",
+                "Steve Blackman"
+            )
+        )
+        tvShows.add(
+            TvShowsData(
+                "The Walking Dead (2010)",
+                "Action & Adventure, Drama, Sci-Fi & Fantasy",
+                R.drawable.poster_the_walking_dead,
+                "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+                "Frank Darabont"
+            )
+        )
+
+        return tvShows
     }
 }
