@@ -1,10 +1,12 @@
 package com.dean.moviecatalogue.tv
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.dean.moviecatalogue.DetailActivity
 import com.dean.moviecatalogue.R
 import com.dean.moviecatalogue.databinding.ItemsTvShowsBinding
 
@@ -40,11 +42,11 @@ class TvShowsAdapter: RecyclerView.Adapter<TvShowsAdapter.TvShowsViewHolder>() {
                 tvItemTitle.text = tvShows.title
                 tvGenre.text = tvShows.genre
                 tvDescription.text = tvShows.description
-                /*itemView.setOnClickListener {
-                    val intent = Intent(itemView.context, DetailCourseActivity::class.java)
-                    intent.putExtra(DetailCourseActivity.EXTRA_COURSE, course.courseId)
+                itemView.setOnClickListener {
+                    val intent = Intent(itemView.context, DetailActivity::class.java)
+                    intent.putExtra(DetailActivity.EXTRA_TV, tvShows)
                     itemView.context.startActivity(intent)
-                }*/
+                }
                 Glide.with(itemView.context)
                     .load(tvShows.poster)
                     .apply(
